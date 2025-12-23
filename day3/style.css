@@ -1,0 +1,30 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-color: #111827;
+    color: white;
+}
+nav a {
+    color: white;
+    margin-left: 16px;
+    text-decoration: none;
+}
+.cards {
+    display: flex;
+    gap: 16px;
+    padding: 16px;
+}
+.card {
+    background-color: #e5e7eb;
+    padding: 24px;
+    flex: 1;
+    text-align: center;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
