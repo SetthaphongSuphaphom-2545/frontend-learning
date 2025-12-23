@@ -21,10 +21,15 @@ nav a {
     padding: 24px;
     flex: 1;
     text-align: center;
+    flex-wrap: wrap;
 }
 .center {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 200px;
+}
+.card:hover{
+    background-color: #d1d5db;
+    cursor: pointer;
 }
