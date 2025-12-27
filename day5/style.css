@@ -1,0 +1,102 @@
+.site-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-color: #111827;
+    color: white;
+}
+nav a {
+    color: white;
+    margin-left: 16px;
+    text-decoration: none;
+}
+.card-list {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    padding: 16px;
+}
+.card-item {
+    background-color: #e5e7eb;
+    padding: 24px;
+    flex: 1;
+    text-align: center;
+    border-radius: 16px;
+    will-change: transform, opacity;
+    /*day 5*/
+    animation: fadeUp 0.6s ease forwards;
+    transition: 
+    background-color 0.3s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+    
+}
+/*day 5*/
+@keyframes fadeIn{
+    from { opacity: 0;}
+    to {opacity: 1;}
+}
+@keyframes fadeUp{
+    from { 
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.card-item:hover{
+    background-color: #d1d5db;
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 10px 25px rgba(0,0, 0, 0.15);
+    cursor: pointer;
+}
+.card-item:active{
+    transform: scale(0.98);
+}
+.card-item:focus{
+    outline: 2px solid #111827;
+}
+@media (hover: none) {
+    .card-item:hover{
+        transform: none;
+        box-shadow: none;
+    }
+}
+
+@media (max-width: 640px){
+    .card-list{
+        flex-direction: column;
+    }
+}
+@media (max-width: 640px) {
+    .site-header{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    nav a {
+        margin-left: 0;
+        margin-right: 12px;
+    }
+}
+
+.link-card {
+    text-decoration: none;
+    color: inherit;
+}
+
+.loaded .card-item {
+  animation: fadeUp 0.6s ease forwards;
+}
+
+
+/*day 5 */
+.card-item:nth-child(1) { animation-delay: 0.1s; }
+.card-item:nth-child(2) { animation-delay: 0.2s; }
+.card-item:nth-child(3) { animation-delay: 0.3s; }
+.card-item:nth-child(4) { animation-delay: 0.4s; }
+.card-item:nth-child(5) { animation-delay: 0.5s; }
+.card-item:nth-child(6) { animation-delay: 0.6s; }
