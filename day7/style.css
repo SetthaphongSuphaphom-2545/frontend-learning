@@ -1,0 +1,9 @@
+.box {
+    margin-top: 10px;
+    padding: 20px;
+    background-color: skyblue;
+}
+
+.hidden{
+    display: none;
+}
