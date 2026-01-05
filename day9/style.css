@@ -1,0 +1,41 @@
+.box {
+    margin-top: 10px;
+    margin-bottom: 16px;
+    padding: 20px;
+    background-color: skyblue;
+}
+
+
+
+
+.menu{
+    background-color: #222;
+    color: white;
+    width: 200px;
+    padding: 10px;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.faq{
+    margin: 10px;
+}
+
+.question{
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.answer{
+    padding: 10px;
+    background-color: #f2f2f2;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(-20px);
+}
