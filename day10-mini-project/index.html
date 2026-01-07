@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mini Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<button id="menuToggleBtn">☰ Menu</button>
+
+<nav id="menu" class="menu hidden">
+  <ul>
+    <li>Home</li>
+    <li>Profile</li>
+    <li>Settings</li>
+  </ul>
+</nav>
+
+<section class="box">
+  <button id="toggleBoxBtn">Toggle Box</button>
+  <div id="contentBox">This is a toggle box</div>
+</section>
+
+<section class="counter">
+  <button id="decreaseBtn">-</button>
+  <span id="count">0</span>
+  <button id="increaseBtn">+</button>
+  <button id="resetBtn">Reset</button>
+</section>
+
+<section class="faq">
+  <button class="question">What is Frontend?</button>
+  <div class="answer hidden">Frontend is UI</div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
